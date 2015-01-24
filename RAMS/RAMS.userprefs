@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/JumpComponent.cs">
     <Files>
-      <File FileName="Assets/Scripts/JumpComponent.cs" Line="12" Column="44" />
-      <File FileName="Assets/Scripts/WalkComponent.cs" Line="15" Column="59" />
+      <File FileName="Assets/Scripts/JumpComponent.cs" Line="89" Column="23" />
+      <File FileName="Assets/Scripts/WalkComponent.cs" Line="53" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
