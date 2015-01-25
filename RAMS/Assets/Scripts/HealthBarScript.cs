@@ -2,31 +2,68 @@
 using System.Collections;
 
 public class HealthBarScript : MonoBehaviour {
-
-	public float health;
-	public Texture2D texture;
-	public Material mat;// = new Material();
-
-	private float x = 10, y = 10;
-	private float w = 300, h = 50;
-
-	void Start() {
-		health = 100;
-	}
-
-
+	
+	[SerializeField] string position = "Left";
+	private int maxHealth = 100;
+	private int currHealth = 100;
+	private Color color;
+	
+	private int barHeight = 20;
+	private int topPadding = 10;
+	private int x, y;
+	
+	private float healthBarLength;
+	private float minHealthBarLength;
+	
 	void OnGUI() {
-		if (Event.current.type.Equals (EventType.Repaint)) {
-			Rect box = new Rect(x,y,w,h);
-			Graphics.DrawTexture(box, texture, mat);
+		GUI.backgroundColor = Color.green;
+		if (healthBarLength > minHealthBarLength) {
+			GUI.Button (new Rect (x, y, healthBarLength, barHeight), "");
 		}
 	}
-
-	void Update() {
-		float wh = (float)(1 - (health / 100));
-		if (wh == 0) {
-			wh = 0.1f;
+	
+	public void AdjustCurrentHealth(int adj) {
+		//int tmpHealth = currHealth;
+		currHealth += adj;
+		
+		if (currHealth < 0) {
+			currHealth = 0;
+			
+			//			while(newHealth != currHealth)
+			//			{
+			//				newHealth -= 5;
+			//				healthBarLength = (Screen.width / 2) * (newHealth / (float)maxHealth);
+			//			}
 		}
-		mat.SetFloat ("_Cutoff", wh);
+		
+		if (currHealth > maxHealth) {
+			currHealth = maxHealth;
+		}
+		
+		//		while (tmpHealth != currHealth) {
+		healthBarLength = (Screen.width / 2) * (currHealth / (float)maxHealth);
+		if (healthBarLength < minHealthBarLength) {
+			healthBarLength = minHealthBarLength;
+		}
+		//		}
+		
+		if (currHealth <= 0) {
+			
+			Debug.Log("Boardcasting to switch to  end game");
+			BroadcastMessage("StopAttacking");
+			BroadcastMessage("BeginFadeOut");
+			
+			
+		}
+	}
+	
+	// Use this for initialization
+	void Start () {
+		x = 10; y = topPadding;
+		healthBarLength = Screen.width / 2 - 2 * topPadding;
+		minHealthBarLength = (float)(healthBarLength * 0.1);
+		if (position.ToLower ().Equals ("right")) {
+			x = (int)(Screen.width - healthBarLength) - x;
+		}
 	}
 }
