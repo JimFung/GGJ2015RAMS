@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{052DC563-B433-5652-3340-C3DD534A9319}</ProjectGuid>
+	<ProjectGuid>{2DE6E73D-2C12-3E6B-8760-23137508DB19}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,11 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ButtonSounds.cs" />
-     <Compile Include="Assets\Scripts\FlipClouds.cs" />
-     <Compile Include="Assets\Scripts\NoMouse.cs" />
-     <Compile Include="Assets\Scripts\changeScene.cs" />
-     <Compile Include="Assets\SubmitLoop.cs" />
+     <Compile Include="Assets\SubmitLoop.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

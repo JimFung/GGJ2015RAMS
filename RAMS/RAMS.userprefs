@@ -1,17 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ButtonSounds.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/changeScene.cs">
     <Files>
-      <File FileName="Assets/Scripts/changeScene.cs" Line="8" Column="21" />
-      <File FileName="Assets/Scripts/NoMouse.cs" Line="7" Column="3" />
-      <File FileName="Assets/Scripts/ButtonSounds.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/changeScene.cs" Line="19" Column="16" />
+      <File FileName="Assets/SubmitLoop.cs" Line="5" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="ButtonSounds.cs" selected="True" />
+              <Node name="changeScene.cs" selected="True" />
             </Node>
           </Node>
         </State>
