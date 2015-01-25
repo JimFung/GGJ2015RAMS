@@ -29,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .949999988, y: .419999987, z: 0}
+  m_LocalPosition: {x: 4.48999977, y: -.469999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputAxis: Horizontal
-  _animator: {fileID: 0}
+  _animator: {fileID: 9593988}
   _animationBool: 
   _speed: 500
   _maxSpeed: 2000
@@ -105,11 +105,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputAxis: Vertical
-  _animator: {fileID: 0}
+  _animator: {fileID: 9593988}
   _animationTrigger: 
   _force: 7
   _rigidBody: {fileID: 5028762}
   _boxCollider: {fileID: 0}
+  isGrounded: 0
 --- !u!114 &11457130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputAxis: Fire1
-  _animator: {fileID: 0}
+  _animator: {fileID: 9593988}
   _animationTrigger: 
   _attackSpeed: 100
   _rigidBody: {fileID: 5028762}

@@ -15,7 +15,7 @@ public class JumpComponent : MonoBehaviour
 
     private float       _ignoreJumpUntil;
 
-	private bool isGrounded = false;
+    public bool isGrounded = false;
 
 
 
@@ -52,8 +52,7 @@ public class JumpComponent : MonoBehaviour
 			isGrounded = false;
             _ignoreJumpUntil = Time.time + 0.25f;
 
-            if ( _animator && !string.IsNullOrEmpty(_animationTrigger) )
-                _animator.SetTrigger(_animationTrigger);
+			_animator.SetBool("isGrounded", isGrounded);
         }
 
 
@@ -78,6 +77,7 @@ public class JumpComponent : MonoBehaviour
 			{
 				if (contact.normal.y >= 1) {
 					isGrounded = true;
+					_animator.SetBool("isGrounded", isGrounded);
 					break;
 				}
 				

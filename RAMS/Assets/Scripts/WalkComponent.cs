@@ -53,8 +53,8 @@ public class WalkComponent : MonoBehaviour
             _rigidBody.velocity = Vector2.ClampMagnitude( _rigidBody.velocity, _maxSpeed );
         }
 
-        if ( _animator && _animationHash != 0 )
-            _animator.SetBool( _animationHash, axis != 0.0f );
+		_animator.SetBool("isRunning",axis!=0.0f);
+     
     }
 
 

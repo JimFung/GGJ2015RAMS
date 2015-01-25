@@ -32,10 +32,11 @@ public class AttackComponent : MonoBehaviour
 			
 			Debug.Log("Play Attacking");
 			_ignoreUntil = Time.time + 1.0f;
-			Attack();
-			
-			if ( _animator && !string.IsNullOrEmpty(_animationTrigger) )
-				_animator.SetTrigger(_animationTrigger);
+
+			//Attack(); // attack is handled in the animation as a animation event
+
+
+			_animator.SetTrigger("isAttacking");
 		}
 
 
