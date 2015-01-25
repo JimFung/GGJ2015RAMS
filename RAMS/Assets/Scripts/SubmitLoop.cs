@@ -10,10 +10,10 @@ public class SubmitLoop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (changeScene.flag && Time.time - changeScene.startTime >= .8) {
-			Debug.Log(changeScene.sceneValue);
-			changeScene.flag = false;
-			Application.LoadLevel(changeScene.sceneValue);
+		if (ChangeScene.flag && Time.time - ChangeScene.startTime >= .8) {
+			Debug.Log(ChangeScene.sceneValue);
+			ChangeScene.flag = false;
+			Application.LoadLevel(ChangeScene.sceneValue);
 		}
 	}
 }
