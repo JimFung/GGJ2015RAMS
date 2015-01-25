@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlatformMoveScript : MonoBehaviour {
 
-	[SerializeField] Transform platform;
+	[SerializeField] Transform platform;   //
 	[SerializeField] Transform startTransform;
 	[SerializeField] Transform endTransform;
 	[SerializeField] float platformSpeed;
