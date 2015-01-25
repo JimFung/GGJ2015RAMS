@@ -3,9 +3,7 @@ using System.Collections;
 
 public class ChangeScene : MonoBehaviour {
 
-	[SerializeField] int scene;
-
-	public void changeScene(){
+	public void changeToScene(int scene){
 		Application.LoadLevel (scene);
 	}
 }
