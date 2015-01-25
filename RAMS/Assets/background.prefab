@@ -9,6 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 408036}
   - 212: {fileID: 21208038}
+  - 114: {fileID: 11457388}
+  - 95: {fileID: 9557388}
   m_Layer: 0
   m_Name: env_Clouds
   m_TagString: Untagged
@@ -70,8 +72,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.83000004, y: -2.25999999, z: 0}
-  m_LocalScale: {x: -1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: -19.2999992, y: 3.20000005, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 408040}
   m_RootOrder: 1
@@ -114,6 +116,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 408040}
   m_RootOrder: 2
+--- !u!95 &9557388
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108036}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0282ae8150c244cdfb716b4f40a05ceb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11457388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c7eec53ba1a4f10824a380390f7146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21208038
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -133,7 +161,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 3292502751
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: c7eed6d9d690741b6a01b9f0405b631a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21208040
@@ -177,7 +205,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 3292502751
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: d685d21f0fa8f440ab4b1c4e62bf410e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
