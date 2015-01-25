@@ -39,7 +39,10 @@ public class GameSoundManager : MonoBehaviour {
 	[SerializeField] AudioClip sfxIdle4;
 	[SerializeField] AudioClip sfxIdle5;
 
-
+	[SerializeField] AudioClip sfxDead1;
+	[SerializeField] AudioClip sfxDead2;
+	[SerializeField] AudioClip sfxDead3;
+	[SerializeField] AudioClip sfxDead4;
 	
 	static System.Random rnd = new System.Random();
 	private List<AudioClip> attackClips =  new List<AudioClip>();
@@ -53,6 +56,7 @@ public class GameSoundManager : MonoBehaviour {
 
 	private List<AudioClip> gruntClips =  new List<AudioClip>();
 	private List<AudioClip> idleClips =  new List<AudioClip>();
+	private List<AudioClip> deadClips =  new List<AudioClip>();
 
 
 	
@@ -91,6 +95,11 @@ public class GameSoundManager : MonoBehaviour {
 		idleClips.Add (sfxIdle3);
 		idleClips.Add (sfxIdle4);
 		idleClips.Add (sfxIdle5);
+
+		deadClips.Add (sfxDead1);
+		deadClips.Add (sfxDead2);
+		deadClips.Add (sfxDead3);
+		deadClips.Add (sfxDead4);
 		
 	}
 	
@@ -133,5 +142,10 @@ public class GameSoundManager : MonoBehaviour {
 		}
 		int r = rnd.Next(idleClips.Count);
 		audio.PlayOneShot (idleClips [r]);
+	}
+
+	public void PlayDeadSound(){
+		int r = rnd.Next(deadClips.Count);
+		audio.PlayOneShot (deadClips [r]);
 	}
 }

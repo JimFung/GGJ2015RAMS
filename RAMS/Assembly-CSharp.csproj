@@ -51,11 +51,13 @@
      <Compile Include="Assets\Scripts\EndGame.cs" />
      <Compile Include="Assets\Scripts\FadeOut.cs" />
      <Compile Include="Assets\Scripts\FlipClouds.cs" />
+     <Compile Include="Assets\Scripts\FlowerPowerup.cs" />
      <Compile Include="Assets\Scripts\GameSoundManager.cs" />
      <Compile Include="Assets\Scripts\HealthBarScript.cs" />
      <Compile Include="Assets\Scripts\JumpComponent.cs" />
      <Compile Include="Assets\Scripts\NoMouse.cs" />
      <Compile Include="Assets\Scripts\PlatformMoveScript.cs" />
+     <Compile Include="Assets\Scripts\PowerUpHandler.cs" />
      <Compile Include="Assets\Scripts\SubmitLoop.cs" />
      <Compile Include="Assets\Scripts\WalkComponent.cs" />
      <Compile Include="Assets\Scripts\changeScene.cs" />
