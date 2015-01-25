@@ -57,11 +57,6 @@ public class WalkComponent : MonoBehaviour
 		}
 
 		_animator.SetBool ("isRunning", axis != 0.0f);
-
-		//float dirX = (this._rigidBody.transform.localRotation  *Vector2.right*-1.0f).x;
-//		if (_rigidBody.transform.localRotation < 0) {
-//			player_tag.transform.localScale = new Vector2 (-1 * player_tag.transform.localScale.x, player_tag.transform.localScale.y);
-//		}
     }
 
 
