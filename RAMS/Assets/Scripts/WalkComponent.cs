@@ -46,7 +46,6 @@ public class WalkComponent : MonoBehaviour
 			_rigidBody.AddForce (moveVector);
 			_rigidBody.velocity = Vector2.ClampMagnitude (_rigidBody.velocity, _maxSpeed);
 		
-			Debug.Log (player_tag.transform.localRotation);
 			float xScale =player_tag.transform.localScale.x;
 			if (axis > 0.0f) {
 				player_tag.transform.localScale =  new Vector3 (-Mathf.Abs(xScale),1,1) ;

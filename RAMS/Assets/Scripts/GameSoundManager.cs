@@ -43,6 +43,8 @@ public class GameSoundManager : MonoBehaviour {
 	[SerializeField] AudioClip sfxDead2;
 	[SerializeField] AudioClip sfxDead3;
 	[SerializeField] AudioClip sfxDead4;
+
+	[SerializeField] AudioClip powersfx;
 	
 	static System.Random rnd = new System.Random();
 	private List<AudioClip> attackClips =  new List<AudioClip>();
@@ -53,13 +55,10 @@ public class GameSoundManager : MonoBehaviour {
 
 	private List<AudioClip> walkClips =  new List<AudioClip>();
 
-
 	private List<AudioClip> gruntClips =  new List<AudioClip>();
 	private List<AudioClip> idleClips =  new List<AudioClip>();
 	private List<AudioClip> deadClips =  new List<AudioClip>();
 
-
-	
 	// Use this for initialization
 	void Start () {
 		attackClips.Add (sfxAttack1);
@@ -147,5 +146,10 @@ public class GameSoundManager : MonoBehaviour {
 	public void PlayDeadSound(){
 		int r = rnd.Next(deadClips.Count);
 		audio.PlayOneShot (deadClips [r]);
+	}
+
+	public void PlayPowerUpSound(){
+		Debug.Log ("playing sound");
+		audio.PlayOneShot (powersfx);
 	}
 }

@@ -47,8 +47,6 @@ public class AttackComponent : MonoBehaviour
 	
 	void Attack(){
 
-
-		Debug.Log(this._rigidBody.transform.localRotation  *Vector2.right*-1.0f);
 		float dirX = (this._rigidBody.transform.localRotation  *Vector2.right*-1.0f).x;
 		Vector2 attackVector2 = new Vector2 (dirX, 0f);
 
@@ -62,7 +60,6 @@ public class AttackComponent : MonoBehaviour
 			var hitLayer = hit.collider.gameObject.layer;
 			if ( hit.rigidbody != _rigidBody && (hitLayer== 9||hitLayer== 10) ){
 				hit.rigidbody.SendMessage( "TakeDamage");
-				Debug.Log("At Attacking");
 
 			}
 
