@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AttackComponent.cs" />
      <Compile Include="Assets\Scripts\JumpComponent.cs" />
      <Compile Include="Assets\Scripts\WalkComponent.cs" />
  <Reference Include="UnityEngine.UI">
