@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 using System.Collections;
 
 public class HealthBarScript : MonoBehaviour {
@@ -7,7 +7,7 @@ public class HealthBarScript : MonoBehaviour {
 	private int maxHealth = 100;
 	private int currHealth = 100;
 	private Color color;
-
+	
 	private int barHeight = 20;
 	private int topPadding = 10;
 	private int x, y;
@@ -52,6 +52,7 @@ public class HealthBarScript : MonoBehaviour {
 			Debug.Log("Boardcasting to switch to  end game");
 			BroadcastMessage("StopAttacking");
 			BroadcastMessage("BeginFadeOut");
+			
 			
 		}
 	}
