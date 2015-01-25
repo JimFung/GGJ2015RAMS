@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChangeScene1 : MonoBehaviour {
+public class changeScene1 : MonoBehaviour {
 
 	[SerializeField] AudioClip select;
 
