@@ -1,8 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HealthBarScript.cs">
     <Files>
       <File FileName="Assets\Scripts\HealthBarScript.cs" Line="39" Column="27" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HealthBarScript.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlatformMoveScript.cs" Line="42" Column="3" />
+      <File FileName="Assets/Scripts/PlatformScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/HealthBarScript.cs" Line="48" Column="5" />
+      <File FileName="Assets/Platform2Script.cs" Line="25" Column="80" />
+>>>>>>> master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
