@@ -32,9 +32,9 @@ public class HealthBarScript : MonoBehaviour {
 			currHealth = maxHealth;
 		}
 
-		while (tmpHealth != currHealth) {
+//		while (tmpHealth != currHealth) {
 			healthBarLength = (Screen.width / 2) * (currHealth / (float)maxHealth);	
-		}
+//		}
 
 	}
 	
@@ -45,6 +45,6 @@ public class HealthBarScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		AdjustCuttentHealth (0);
+		AdjustCurrentHealth (0);
 	}
 }
