@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\JumpComponent.cs" />
      <Compile Include="Assets\Scripts\NoMouse.cs" />
      <Compile Include="Assets\Scripts\PlatformMoveScript.cs" />
+     <Compile Include="Assets\Scripts\SubmitLoop.cs" />
      <Compile Include="Assets\Scripts\WalkComponent.cs" />
      <Compile Include="Assets\Scripts\changeScene.cs" />
  <Reference Include="UnityEngine.UI">

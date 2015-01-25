@@ -1,14 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FadeOut.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SubmitLoop.cs">
     <Files>
       <File FileName="Assets/Scripts/GameSoundManager.cs" Line="130" Column="23" />
-      <File FileName="Assets/Scripts/HealthBarScript.cs" Line="45" Column="34" />
+      <File FileName="Assets/Scripts/HealthBarScript.cs" Line="45" Column="38" />
       <File FileName="Assets/Scripts/WalkComponent.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FadeOut.cs" Line="30" Column="38" />
-      <File FileName="Assets/Scripts/AttackComponent.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/changeScene.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/JumpComponent.cs" Line="45" Column="1" />
+      <File FileName="Assets/Scripts/AttackComponent.cs" Line="1" Column="1" />
+      <File FileName="Assets/SubmitLoop.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
