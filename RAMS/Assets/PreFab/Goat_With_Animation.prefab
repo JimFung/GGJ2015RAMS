@@ -108,6 +108,7 @@ MonoBehaviour:
   _animationTrigger: 
   _force: 7
   _rigidBody: {fileID: 5028762}
+  _boxCollider: {fileID: 0}
 --- !u!212 &21293988
 SpriteRenderer:
   m_ObjectHideFlags: 1

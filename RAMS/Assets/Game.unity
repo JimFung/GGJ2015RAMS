@@ -132,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 224064973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .140000001, y: 4.23000002, z: 0}
+  m_LocalPosition: {x: .140000001, y: 2.3499999, z: 0}
   m_LocalScale: {x: .276411861, y: .162560776, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -147,8 +147,8 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -283,6 +283,14 @@ Prefab:
       propertyPath: _inputAxis
       value: RamVertical1
       objectReference: {fileID: 0}
+    - target: {fileID: 193988, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: m_Name
+      value: Ram1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428764, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: _boxCollider
+      value: 
+      objectReference: {fileID: 1400311850}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1400311849}
@@ -335,6 +343,14 @@ Prefab:
       propertyPath: _inputAxis
       value: RamVertical2
       objectReference: {fileID: 0}
+    - target: {fileID: 193988, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: m_Name
+      value: Ram2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428764, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: _boxCollider
+      value: 
+      objectReference: {fileID: 1220662421}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1220662418}
@@ -355,7 +371,7 @@ GameObject:
   - 114: {fileID: 1220662420}
   - 114: {fileID: 1220662419}
   m_Layer: 9
-  m_Name: Goat_With_Animation
+  m_Name: Ram2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,6 +394,7 @@ MonoBehaviour:
   _animationTrigger: 
   _force: 7
   _rigidBody: {fileID: 1220662422}
+  _boxCollider: {fileID: 1220662421}
 --- !u!114 &1220662420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,7 +586,7 @@ GameObject:
   - 114: {fileID: 1400311855}
   - 114: {fileID: 1400311856}
   m_Layer: 9
-  m_Name: Goat_With_Animation
+  m_Name: Ram1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,3 +707,4 @@ MonoBehaviour:
   _animationTrigger: 
   _force: 7
   _rigidBody: {fileID: 1400311851}
+  _boxCollider: {fileID: 1400311850}
