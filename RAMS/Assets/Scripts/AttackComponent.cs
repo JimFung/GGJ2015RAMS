@@ -82,6 +82,7 @@ public class AttackComponent : MonoBehaviour
 
 		Debug.Log ("Taken Damage");
 		this.SendMessage( "AdjustCurrentHealth", damage);
-
+		BroadcastMessage("PlayHitSound");
+		BroadcastMessage("PlayGruntSound");
 	}
 }
