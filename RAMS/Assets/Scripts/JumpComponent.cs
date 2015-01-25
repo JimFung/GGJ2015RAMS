@@ -42,7 +42,6 @@ public class JumpComponent : MonoBehaviour
         {
 
 			float direction = Mathf.Ceil(axis);
-			Debug.Log (direction);
 
 			float yMovement = direction * _force;
             Vector2 moveVector = new Vector2( 0.0f, yMovement );
@@ -69,7 +68,6 @@ public class JumpComponent : MonoBehaviour
 		if (isGrounded) {
 			return;
 		}
-		Debug.Log("at collision");
 		var hitLayer = hit.gameObject.layer;
 		// 8 terrain, 9 goat, 10 goatpassableterrain layer
 		if (hitLayer ==8 || hitLayer ==9 || hitLayer ==10  ){

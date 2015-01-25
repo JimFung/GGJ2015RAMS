@@ -8,9 +8,7 @@ public class AttackComponent : MonoBehaviour
 	[SerializeField]    string      _inputAxis;
 
     [SerializeField]    Animator    _animator;
-    [SerializeField]    string      _animationTrigger;
 
-    [SerializeField]    float       _attackSpeed = 100.0f;
     [SerializeField]    Rigidbody2D   _rigidBody;
 
 	[SerializeField]    int   damage;

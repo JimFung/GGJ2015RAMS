@@ -126,8 +126,8 @@ public class GameSoundManager : MonoBehaviour {
 	}
 
 	public void PlayRandomIdleSound(){
-		int chance = rnd.Next(10);
-		// chance == 0 for 10% chance of running
+		int chance = rnd.Next(20);
+		// chance == 0 for 5% chance of running
 		if ( chance != 0){
 			return;
 		}

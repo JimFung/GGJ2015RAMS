@@ -14,13 +14,8 @@ public class WalkComponent : MonoBehaviour
     [SerializeField]    Rigidbody2D   _rigidBody;
     [SerializeField]    float       _stopMultiplier = 0.98f;
 
-    private int         _animationHash;
     private float       _ignoreUntil;
 
-    void Awake()
-    {
-        _animationHash = Animator.StringToHash( _animationBool );
-    }
 
     /// <summary>
     /// We should be in *FixedUpdate* not in Update because we're modifying Rigidbody
