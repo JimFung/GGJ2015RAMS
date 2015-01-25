@@ -18,8 +18,10 @@ public class HealthBarScript : MonoBehaviour {
 	private float minHealthBarLength;
 	
 	void OnGUI() {
+
+		Debug.Log (currHealth + " " + healthBarLength + " " + minHealthBarLength);
 		GUI.backgroundColor = Color.green;
-		if (healthBarLength > minHealthBarLength) {
+		if (currHealth != 0 ) {
 			GUI.Button (new Rect (x, y, healthBarLength, barHeight), "");
 		}
 	}
@@ -62,11 +64,10 @@ public class HealthBarScript : MonoBehaviour {
 			Debug.Log("Boardcasting to switch to  end game");
 			BroadcastMessage("StopAttacking");
 			BroadcastMessage("BeginFadeOut");
-<<<<<<< HEAD
-=======
+
 			BroadcastMessage("PlayDeadSound");
 
->>>>>>> master
+
 		}
 	}
 	
@@ -74,7 +75,7 @@ public class HealthBarScript : MonoBehaviour {
 	void Start () {
 		x = 10; y = topPadding;
 		healthBarLength = (Screen.width / 2) - (2 * x);
-		minHealthBarLength = (float)(healthBarLength * 0.1);
+		minHealthBarLength = (float)(healthBarLength * 0.05);
 		if (position.ToLower ().Equals ("right")) {
 			x = (int)(Screen.width - healthBarLength) - x;
 		}

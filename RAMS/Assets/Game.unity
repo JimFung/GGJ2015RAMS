@@ -1744,6 +1744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: Left
+  currHealth: 100
+  val: 0
 --- !u!114 &1107960396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2165,6 +2167,10 @@ Prefab:
       propertyPath: powersfx
       value: 
       objectReference: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
+    - target: {fileID: 11457130, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: damage
+      value: -10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11477514, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
@@ -2346,6 +2352,10 @@ Prefab:
       propertyPath: powersfx
       value: 
       objectReference: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
+    - target: {fileID: 11457130, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: damage
+      value: -20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1563720330}
@@ -2392,7 +2402,7 @@ MonoBehaviour:
   _inputAxis: RamAttack2
   _animator: {fileID: 1563720336}
   _rigidBody: {fileID: 1563720335}
-  damage: -10
+  damage: -20
 --- !u!114 &1563720332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2525,6 +2535,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: Right
+  currHealth: 100
+  val: 0
 --- !u!114 &1563720340
 MonoBehaviour:
   m_ObjectHideFlags: 0

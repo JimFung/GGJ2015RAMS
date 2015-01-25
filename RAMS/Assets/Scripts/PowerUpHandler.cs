@@ -29,8 +29,8 @@ public class PowerUpHandler : MonoBehaviour {
 
 
 	bool ChanceToOccur(){
-		int chance = rnd.Next(1200);
-		// chance == 0 for 1 in 30 secs in 60 fps chance of running
+		int chance = rnd.Next(900);
+		// chance == 0 for 1 in 20 secs in 60 fps chance of running
 		return chance == 0;
 
 	}

@@ -59,7 +59,7 @@ public class AttackComponent : MonoBehaviour
 		{
 			var hitLayer = hit.collider.gameObject.layer;
 			if ( hit.rigidbody != _rigidBody && (hitLayer== 9||hitLayer== 10) ){
-				hit.rigidbody.SendMessage( "TakeDamage");
+				hit.rigidbody.SendMessage( "TakeDamage", damage);
 
 			}
 
@@ -72,10 +72,10 @@ public class AttackComponent : MonoBehaviour
 
    
 
-	void TakeDamage(){
+	void TakeDamage(int takenDamage){
 
 		Debug.Log ("Taken Damage");
-		this.SendMessage( "AdjustCurrentHealth", damage);
+		this.SendMessage( "AdjustCurrentHealth", takenDamage);
 		BroadcastMessage("PlayHitSound");
 		BroadcastMessage("PlayGruntSound");
 	}

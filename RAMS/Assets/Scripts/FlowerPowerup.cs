@@ -10,7 +10,7 @@ public class FlowerPowerup : MonoBehaviour {
 		// 8 terrain, 9 goat, 10 goatpassableterrain layer
 		if ( hitLayer ==9 || hitLayer ==10  ){
 
-			hit.gameObject.BroadcastMessage("AdjustCurrentHealth", 20);
+			hit.gameObject.BroadcastMessage("AdjustCurrentHealth", 10);
 			hit.gameObject.BroadcastMessage("PlayPowerUpSound");
 
 			this.gameObject.SetActive(false);
