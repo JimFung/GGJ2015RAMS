@@ -7,7 +7,6 @@ public class FlipClouds : MonoBehaviour {
 		this.gameObject.transform.localScale = new Vector3 ((-1 * this.gameObject.transform.localScale.x), this.gameObject.transform.localScale.y, this.gameObject.transform.localScale.z);
 		//layer = 2 : behind mountain
 		//layer = 5 : infront of mountain
-		Debug.Log (this.gameObject.transform.localScale);
 		if((int)Random.Range(1,10)%2 == 0){
 			//even
 			this.gameObject.renderer.sortingOrder= 2;
@@ -15,7 +14,5 @@ public class FlipClouds : MonoBehaviour {
 			//odd
 			this.gameObject.renderer.sortingOrder = 5;
 		}
-		Debug.Log (this.gameObject.renderer.sortingLayerName);
-		Debug.Log (this.gameObject.renderer.sortingOrder);
 	}
 }

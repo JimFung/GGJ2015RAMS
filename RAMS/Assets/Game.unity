@@ -1861,6 +1861,7 @@ MonoBehaviour:
   sfxDead2: {fileID: 0}
   sfxDead3: {fileID: 0}
   sfxDead4: {fileID: 0}
+  powersfx: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
 --- !u!1 &1259834123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,6 +2161,10 @@ Prefab:
       propertyPath: cam
       value: 
       objectReference: {fileID: 310702914}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: powersfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
     m_RemovedComponents:
     - {fileID: 11477514, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
@@ -2337,6 +2342,10 @@ Prefab:
       propertyPath: player_tag
       value: 
       objectReference: {fileID: 619659231}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: powersfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1563720330}
@@ -2633,6 +2642,7 @@ MonoBehaviour:
   sfxDead2: {fileID: 0}
   sfxDead3: {fileID: 0}
   sfxDead4: {fileID: 0}
+  powersfx: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
 --- !u!1 &1564182409
 GameObject:
   m_ObjectHideFlags: 0
