@@ -28,7 +28,6 @@ public class PlatformMoveScript : MonoBehaviour {
 	}
 
 	void SetDestination(Transform dest) {
-
 		destination = dest;
 		direction = (destination.position - platform.position).normalized;
 	}

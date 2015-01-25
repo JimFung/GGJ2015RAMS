@@ -14,21 +14,26 @@ public class HealthBarScript : MonoBehaviour {
 	private float healthBarLength;
 
 	void OnGUI() {
+		AdjustCurrentHealth (-90);
 		GUI.Box(new Rect(x, y, healthBarLength, barHeight), currHealth + "/" + maxHealth);
 	}
 
 	public void AdjustCurrentHealth(int adj) {
-		//int tmpHealth = currHealth;
+		Debug.Log ("2");
+		int tmpHealth = currHealth;
 		currHealth += adj;
 
 		if (currHealth < 0) {
+			Debug.Log ("<0");
 			currHealth = 0;
-
-//			while(newHealth != currHealth)
-//			{
-//				newHealth -= 5;
-//				healthBarLength = (Screen.width / 2) * (newHealth / (float)maxHealth);
-//			}
+		} else {
+			Debug.Log (">0");
+			while((adj > 0 && tmpHealth < currHealth) || (adj < 0 && tmpHealth > currHealth))
+			{
+				Debug.Log ("while");
+				tmpHealth += (adj > 0) ? adj : -1 * adj;
+				healthBarLength = (Screen.width / 2) * (tmpHealth / (float)maxHealth);
+			}
 		}
 
 		if (currHealth > maxHealth) {
@@ -48,5 +53,6 @@ public class HealthBarScript : MonoBehaviour {
 		if (position.ToLower ().Equals ("right")) {
 			x = (int)(Screen.width - healthBarLength) - x;
 		}
+		Debug.Log ("1");
 	}
 }
