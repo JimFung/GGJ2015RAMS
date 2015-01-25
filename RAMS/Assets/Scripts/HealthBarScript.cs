@@ -13,6 +13,7 @@ public class HealthBarScript : MonoBehaviour {
 	} 
 
 	public void AdjustCurrentHealth(int adj) {
+		Debug.Log ("At Health Bar" + adj);
 		int tmpHealth = currHealth;
 		currHealth += adj;
 
@@ -43,8 +44,8 @@ public class HealthBarScript : MonoBehaviour {
 		healthBarLength = Screen.width / 2;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		AdjustCurrentHealth (0);
+	// Upfdate is called once per frame
+	void FixedUpdate () {
+		//AdjustCurrentHealth (0);
 	}
 }

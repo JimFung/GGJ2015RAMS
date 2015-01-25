@@ -78,6 +78,7 @@ public class AttackComponent : MonoBehaviour
 	void TakeDamage(){
 
 		Debug.Log ("Taken Damage");
-		this.gameObject.SetActive (false);
+		this.SendMessage( "AdjustCurrentHealth", -50);
+
 	}
 }
