@@ -127,6 +127,7 @@ MonoBehaviour:
   _animationTrigger: 
   _attackSpeed: 100
   _rigidBody: {fileID: 5028762}
+  damage: -10
 --- !u!212 &21293988
 SpriteRenderer:
   m_ObjectHideFlags: 1

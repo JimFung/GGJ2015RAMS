@@ -354,6 +354,7 @@ MonoBehaviour:
   _animationTrigger: 
   _attackSpeed: 100
   _rigidBody: {fileID: 1107960391}
+  damage: -10
 --- !u!114 &1107960388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +730,7 @@ MonoBehaviour:
   _animationTrigger: 
   _attackSpeed: 100
   _rigidBody: {fileID: 1563720335}
+  damage: -10
 --- !u!114 &1563720332
 MonoBehaviour:
   m_ObjectHideFlags: 0

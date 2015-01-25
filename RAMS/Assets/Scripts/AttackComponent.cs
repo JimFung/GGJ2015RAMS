@@ -13,6 +13,9 @@ public class AttackComponent : MonoBehaviour
     [SerializeField]    float       _attackSpeed = 100.0f;
     [SerializeField]    Rigidbody2D   _rigidBody;
 
+	[SerializeField]    int   damage;
+
+
     private float       _ignoreUntil;
 
     /// <summary>
@@ -78,7 +81,7 @@ public class AttackComponent : MonoBehaviour
 	void TakeDamage(){
 
 		Debug.Log ("Taken Damage");
-		this.SendMessage( "AdjustCurrentHealth", -50);
+		this.SendMessage( "AdjustCurrentHealth", damage);
 
 	}
 }
