@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11477514}
   - 114: {fileID: 11414902}
   - 82: {fileID: 8207632}
+  - 114: {fileID: 11439474}
   m_Layer: 9
   m_Name: Goat_With_Animation
   m_TagString: Untagged
@@ -210,6 +211,20 @@ MonoBehaviour:
   _rigidBody: {fileID: 5028762}
   _boxCollider: {fileID: 0}
   isGrounded: 0
+--- !u!114 &11439474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4147a8f5b866401b89494d589545996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 21293988}
+  alphaDecay: .00999999978
+  gameListener: {fileID: 0}
 --- !u!114 &11457130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,8 +238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputAxis: Fire1
   _animator: {fileID: 9593988}
-  _animationTrigger: 
-  _attackSpeed: 100
   _rigidBody: {fileID: 5028762}
   damage: -10
 --- !u!114 &11477514

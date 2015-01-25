@@ -38,6 +38,15 @@ public class HealthBarScript : MonoBehaviour {
 //		while (tmpHealth != currHealth) {
 			healthBarLength = (Screen.width / 2) * (currHealth / (float)maxHealth);	
 //		}
+
+		if (currHealth <= 0) {
+
+			Debug.Log("Boardcasting to switch to  end game");
+			BroadcastMessage("StopAttacking");
+			BroadcastMessage("BeginFadeOut");
+
+
+		}
 	}
 	
 	// Use this for initialization

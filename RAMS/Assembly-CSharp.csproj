@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AttackComponent.cs" />
      <Compile Include="Assets\Scripts\ButtonSounds.cs" />
+     <Compile Include="Assets\Scripts\EndGame.cs" />
+     <Compile Include="Assets\Scripts\FadeOut.cs" />
      <Compile Include="Assets\Scripts\FlipClouds.cs" />
      <Compile Include="Assets\Scripts\GameSoundManager.cs" />
      <Compile Include="Assets\Scripts\HealthBarScript.cs" />

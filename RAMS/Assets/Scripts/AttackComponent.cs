@@ -15,6 +15,7 @@ public class AttackComponent : MonoBehaviour
 
 
     private float       _ignoreUntil;
+	private bool 		canAttack = true;
 
     /// <summary>
     /// We should be in *FixedUpdate* not in Update because we're modifying Rigidbody
@@ -28,10 +29,9 @@ public class AttackComponent : MonoBehaviour
             return;
 
 
-		if ( _inputButton > 0.0f )
+		if ( canAttack && _inputButton > 0.0f )
 		{ 
 			
-			Debug.Log("Play Attacking");
 			_ignoreUntil = Time.time + 1.0f;
 
 			//Attack(); // attack is handled in the animation as a animation event
@@ -41,11 +41,10 @@ public class AttackComponent : MonoBehaviour
 		}
 
 
-
-      
- 
-    }
-
+		
+		
+	}
+	
 	void Attack(){
 
 
@@ -82,5 +81,10 @@ public class AttackComponent : MonoBehaviour
 		this.SendMessage( "AdjustCurrentHealth", damage);
 		BroadcastMessage("PlayHitSound");
 		BroadcastMessage("PlayGruntSound");
+	}
+
+	void StopAttacking(){
+		Debug.Log ("Stop Attacking");
+		canAttack = false;
 	}
 }

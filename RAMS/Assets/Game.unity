@@ -104,6 +104,46 @@ Transform:
   - {fileID: 1368818507}
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!1 &119074882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 119074883}
+  - 114: {fileID: 119074884}
+  m_Layer: 0
+  m_Name: GameListener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &119074883
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119074882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.86999989, y: -5.03999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+--- !u!114 &119074884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119074882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d36c18c0d994d7daecd37e8992bb12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsBeforeCredits: 30
 --- !u!1 &180374939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1306,7 @@ GameObject:
   - 114: {fileID: 1107960387}
   - 114: {fileID: 1107960399}
   - 82: {fileID: 1107960398}
+  - 114: {fileID: 1107960396}
   - 114: {fileID: 1107960395}
   m_Layer: 9
   m_Name: Ram1
@@ -1419,6 +1460,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: Left
+--- !u!114 &1107960396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11439474, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1467915222}
+  m_GameObject: {fileID: 1107960386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4147a8f5b866401b89494d589545996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 1107960393}
+  alphaDecay: .00999999978
+  gameListener: {fileID: 119074882}
 --- !u!82 &1107960398
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1802,6 +1858,10 @@ Prefab:
       propertyPath: m_Center.x
       value: -.00574111938
       objectReference: {fileID: 0}
+    - target: {fileID: 11439474, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: gameListener
+      value: 
+      objectReference: {fileID: 119074882}
     m_RemovedComponents:
     - {fileID: 11477514, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
@@ -1971,6 +2031,10 @@ Prefab:
       propertyPath: m_Center.x
       value: -.0229645967
       objectReference: {fileID: 0}
+    - target: {fileID: 11439474, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: gameListener
+      value: 
+      objectReference: {fileID: 119074882}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1563720330}
@@ -1994,6 +2058,7 @@ GameObject:
   - 114: {fileID: 1563720339}
   - 114: {fileID: 1563720343}
   - 82: {fileID: 1563720342}
+  - 114: {fileID: 1563720340}
   m_Layer: 9
   m_Name: Ram2
   m_TagString: Untagged
@@ -2147,6 +2212,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: Right
+--- !u!114 &1563720340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11439474, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1563093174}
+  m_GameObject: {fileID: 1563720330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4147a8f5b866401b89494d589545996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 1563720337}
+  alphaDecay: .00999999978
+  gameListener: {fileID: 119074882}
 --- !u!82 &1563720342
 AudioSource:
   m_ObjectHideFlags: 0
