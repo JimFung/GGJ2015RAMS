@@ -25,6 +25,14 @@ public class HealthBarScript : MonoBehaviour {
 	}
 	
 	public void AdjustCurrentHealth(int adj) {
+
+		// in case the ram is at 0 hp(dead) and try to find hp powerups
+		// the ram will not get more life. When hp is 0 triggers have already been executed
+		if (currHealth == 0) {
+			// the original execution that made hp 0 would have already called the correct methods
+			return;
+		}
+
 		//int tmpHealth = currHealth;
 		currHealth += adj;
 		
@@ -54,6 +62,11 @@ public class HealthBarScript : MonoBehaviour {
 			Debug.Log("Boardcasting to switch to  end game");
 			BroadcastMessage("StopAttacking");
 			BroadcastMessage("BeginFadeOut");
+<<<<<<< HEAD
+=======
+			BroadcastMessage("PlayDeadSound");
+
+>>>>>>> master
 		}
 	}
 	

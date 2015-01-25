@@ -30,6 +30,10 @@ MonoImporter:
   - sfxIdle3: {fileID: 8300000, guid: b125511ffe8a2420abd7d5a167eeb69d, type: 3}
   - sfxIdle4: {fileID: 8300000, guid: 5e4acac48e92e481c81daac75d5528dd, type: 3}
   - sfxIdle5: {fileID: 8300000, guid: 9bc44b8f8cb9d4727bf76f30cd18f8ec, type: 3}
+  - sfxDead1: {fileID: 8300000, guid: 0501648cd628449a9866244972dbefd5, type: 3}
+  - sfxDead2: {fileID: 8300000, guid: aeffdd52135e349c5818ca6f8a069f2b, type: 3}
+  - sfxDead3: {fileID: 8300000, guid: 33babd1c8300d4c61b1438014d990724, type: 3}
+  - sfxDead4: {fileID: 8300000, guid: 444adce5d391c476eacf849db480ab33, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
