@@ -9,7 +9,7 @@ public class PowerUpHandler : MonoBehaviour {
 	// spawning regions
 
 	private float minx = -7.0f;
-	private float maxx = -8.0f;
+	private float maxx = 8.0f;
 	private float miny = 6.0f;
 	private float maxy = 8.0f;
 
@@ -31,7 +31,7 @@ public class PowerUpHandler : MonoBehaviour {
 	bool ChanceToOccur(){
 		int chance = rnd.Next(1200);
 		// chance == 0 for 1 in 30 secs in 60 fps chance of running
-		return chance == 0;
+		return chance != 0;
 
 	}
 	Vector3 GetSpawnLocation() {
