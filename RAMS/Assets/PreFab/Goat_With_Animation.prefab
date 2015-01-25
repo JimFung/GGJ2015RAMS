@@ -10,7 +10,11 @@ GameObject:
   - 4: {fileID: 493988}
   - 212: {fileID: 21293988}
   - 95: {fileID: 9593988}
-  m_Layer: 0
+  - 50: {fileID: 5028762}
+  - 61: {fileID: 6128762}
+  - 114: {fileID: 11428762}
+  - 114: {fileID: 11428764}
+  m_Layer: 9
   m_Name: Goat_With_Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,11 +28,37 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .949999988, y: .419999987, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5028762
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!61 &6128762
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.34000003, y: 1.5}
+  m_Center: {x: 0, y: .75}
 --- !u!95 &9593988
 Animator:
   serializedVersion: 3
@@ -44,6 +74,40 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11428762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10383a918997a4842a02634f13d451f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputAxis: Horizontal
+  _animator: {fileID: 0}
+  _animationBool: 
+  _speed: 500
+  _maxSpeed: 2000
+  _rigidBody: {fileID: 5028762}
+  _stopMultiplier: .949999988
+--- !u!114 &11428764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5148f256169ee4337abd35bbaa91e3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputAxis: Vertical
+  _animator: {fileID: 0}
+  _animationTrigger: 
+  _force: 7
+  _rigidBody: {fileID: 5028762}
 --- !u!212 &21293988
 SpriteRenderer:
   m_ObjectHideFlags: 1

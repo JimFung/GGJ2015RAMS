@@ -11,36 +11,16 @@ public class JumpComponent : MonoBehaviour
     [SerializeField]    string      _animationTrigger;
     [SerializeField]    float       _force = 10.0f;
     [SerializeField]    Rigidbody2D   _rigidBody;
+	[SerializeField]    BoxCollider2D   _boxCollider;
 
     private float       _ignoreJumpUntil;
 
-    private bool isGrounded
-    {
-        get
-        {
-            foreach ( var hit in Physics2D.RaycastAll( _rigidBody.position, -Vector2.up, 0.1f ) )
-            {
-                if ( hit.rigidbody != _rigidBody )
-                    return true;
-            }
+	private bool isGrounded = false;
 
-            return false;
-        }
-    }
 
-    /*
-     * This is a debugging trick
-     */
-    /*
-    void OnGUI()
-    {
-        GUI.Label( new Rect( 0.0f, 0.0f, 200.0f, 200.0f), "IsGrounded: " + isGrounded );
-    }
-     */
 
     void FixedUpdate()
     {
-
 
 		// method one for platform jumping
 		if (_rigidBody.velocity.y > 0) {
@@ -52,7 +32,7 @@ public class JumpComponent : MonoBehaviour
 
 
 
-        if ( Time.time < _ignoreJumpUntil || !isGrounded )
+		if ( Time.time < _ignoreJumpUntil || !isGrounded )
             return;
 
 
@@ -68,6 +48,8 @@ public class JumpComponent : MonoBehaviour
             Vector2 moveVector = new Vector2( 0.0f, yMovement );
 
             _rigidBody.AddForce( moveVector, ForceMode2D.Impulse );
+
+			isGrounded = false;
             _ignoreJumpUntil = Time.time + 0.25f;
 
             if ( _animator && !string.IsNullOrEmpty(_animationTrigger) )
@@ -80,16 +62,29 @@ public class JumpComponent : MonoBehaviour
 	
 
 
-		// method 2
-		/**
-		 * 
-		 * 
-		 * l a better way to check for isGrounded is to have code in your
-		 * OnCollisionEnter that checks the ContactPoint.normal. See if its 
-		 * Y is positive, if so, that means your player collided with something 
-		 * below it. http://docs.unity3d.com/Documentation/ScriptReference/ContactPoint-normal.html
-		 * 
-		 **/
 
 	}
+
+	void OnCollisionEnter2D (Collision2D hit) {
+		Debug.Log("at collision");
+		var hitLayer = hit.gameObject.layer;
+		// 8 terrain, 9 goat, 10 goatpassableterrain layer
+		if (hitLayer ==8 || hitLayer ==9 || hitLayer ==10  ){
+
+
+		
+
+			foreach(ContactPoint2D contact in hit.contacts)
+			{
+				if (contact.normal.y >= 1) {
+					isGrounded = true;
+					break;
+				}
+				
+			}
+
+		}
+
+	}
+
 }
