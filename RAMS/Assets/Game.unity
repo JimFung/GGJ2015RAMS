@@ -313,7 +313,6 @@ MonoBehaviour:
   startTransform: {fileID: 1804026798}
   endTransform: {fileID: 976184916}
   platformSpeed: .5
-  stillTimeSeconds: 0
 --- !u!1 &1107960386
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,10 +388,10 @@ MonoBehaviour:
   _inputAxis: RamHorizontal1
   _animator: {fileID: 1107960392}
   _animationBool: 
-  _speed: 500
-  _maxSpeed: 2000
+  _speed: 400
+  _maxSpeed: 1600
   _rigidBody: {fileID: 1107960391}
-  _stopMultiplier: .949999988
+  _stopMultiplier: .800000012
 --- !u!61 &1107960390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -483,6 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33e8b5d08d4f58a4aa2842d7b34ffe17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position: Left
 --- !u!1001 &1261359582
 Prefab:
   m_ObjectHideFlags: 0
@@ -626,7 +626,8 @@ Prefab:
       propertyPath: _inputAxis
       value: RamAttack1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11477514, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1107960386}
   m_IsPrefabParent: 0
@@ -686,6 +687,10 @@ Prefab:
       propertyPath: _inputAxis
       value: RamAttack2
       objectReference: {fileID: 0}
+    - target: {fileID: 11477514, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: position
+      value: Right
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1563720330}
@@ -706,6 +711,7 @@ GameObject:
   - 114: {fileID: 1563720333}
   - 114: {fileID: 1563720332}
   - 114: {fileID: 1563720331}
+  - 114: {fileID: 1563720339}
   m_Layer: 9
   m_Name: Ram2
   m_TagString: Untagged
@@ -765,10 +771,10 @@ MonoBehaviour:
   _inputAxis: RamHorizontal2
   _animator: {fileID: 1563720336}
   _animationBool: 
-  _speed: 500
-  _maxSpeed: 2000
+  _speed: 400
+  _maxSpeed: 1600
   _rigidBody: {fileID: 1563720335}
-  _stopMultiplier: .949999988
+  _stopMultiplier: .800000012
 --- !u!61 &1563720334
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -848,6 +854,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1563720339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11477514, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1563093174}
+  m_GameObject: {fileID: 1563720330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e8b5d08d4f58a4aa2842d7b34ffe17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: Right
 --- !u!1 &1804026797
 GameObject:
   m_ObjectHideFlags: 0

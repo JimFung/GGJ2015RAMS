@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11428762}
   - 114: {fileID: 11428764}
   - 114: {fileID: 11457130}
+  - 114: {fileID: 11477514}
   m_Layer: 9
   m_Name: Goat_With_Animation
   m_TagString: Untagged
@@ -89,10 +90,10 @@ MonoBehaviour:
   _inputAxis: Horizontal
   _animator: {fileID: 9593988}
   _animationBool: 
-  _speed: 500
-  _maxSpeed: 2000
+  _speed: 400
+  _maxSpeed: 1600
   _rigidBody: {fileID: 5028762}
-  _stopMultiplier: .949999988
+  _stopMultiplier: .800000012
 --- !u!114 &11428764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,6 +129,18 @@ MonoBehaviour:
   _attackSpeed: 100
   _rigidBody: {fileID: 5028762}
   damage: -10
+--- !u!114 &11477514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e8b5d08d4f58a4aa2842d7b34ffe17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: Left
 --- !u!212 &21293988
 SpriteRenderer:
   m_ObjectHideFlags: 1
