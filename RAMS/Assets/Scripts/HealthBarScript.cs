@@ -6,15 +6,20 @@ public class HealthBarScript : MonoBehaviour {
 	[SerializeField] string position = "Left";
 	private int maxHealth = 100;
 	private int currHealth = 100;
+	private Color color;
 
 	private int barHeight = 20;
 	private int topPadding = 10;
 	private int x, y;
 
 	private float healthBarLength;
+	private float minHealthBarLength;
 
 	void OnGUI() {
-		GUI.Box(new Rect(x, y, healthBarLength, barHeight), currHealth + "/" + maxHealth);
+		GUI.backgroundColor = Color.green;
+		if (healthBarLength > minHealthBarLength) {
+				GUI.Button (new Rect (x, y, healthBarLength, barHeight), "");
+		}
 	}
 
 	public void AdjustCurrentHealth(int adj) {
@@ -36,7 +41,10 @@ public class HealthBarScript : MonoBehaviour {
 		}
 
 //		while (tmpHealth != currHealth) {
-			healthBarLength = (Screen.width / 2) * (currHealth / (float)maxHealth);	
+			healthBarLength = (Screen.width / 2) * (currHealth / (float)maxHealth);
+			if (healthBarLength < minHealthBarLength) {
+				healthBarLength = minHealthBarLength;
+			}
 //		}
 
 		if (currHealth <= 0) {
@@ -53,7 +61,7 @@ public class HealthBarScript : MonoBehaviour {
 	void Start () {
 		x = 10; y = topPadding;
 		healthBarLength = Screen.width / 2 - 2 * topPadding;
-
+		minHealthBarLength = (float)(healthBarLength * 0.1);
 		if (position.ToLower ().Equals ("right")) {
 			x = (int)(Screen.width - healthBarLength) - x;
 		}
