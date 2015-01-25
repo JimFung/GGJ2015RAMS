@@ -128,28 +128,6 @@ SpriteRenderer:
   m_PrefabInternal: {fileID: 608001834}
   m_GameObject: {fileID: 180374939}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c353ed1b90dde49a1fe83c7da42d9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platform: {fileID: 787709153}
-  startTransform: {fileID: 1885704482}
-  endTransform: {fileID: 1402542658}
-  platformSpeed: 2
---- !u!114 &246884602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 246884599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33e8b5d08d4f58a4aa2842d7b34ffe17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: Left
-=======
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -177,7 +155,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 943031226}
   m_RootOrder: 0
->>>>>>> master
 --- !u!1 &310702910
 GameObject:
   m_ObjectHideFlags: 0
