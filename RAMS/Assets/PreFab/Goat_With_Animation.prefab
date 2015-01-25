@@ -16,6 +16,9 @@ GameObject:
   - 114: {fileID: 11428764}
   - 114: {fileID: 11457130}
   - 114: {fileID: 11477514}
+  - 114: {fileID: 11414902}
+  - 82: {fileID: 8207632}
+  - 114: {fileID: 11439474}
   m_Layer: 9
   m_Name: Goat_With_Animation
   m_TagString: Untagged
@@ -61,6 +64,64 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.34000003, y: 1.5}
   m_Center: {x: 0, y: .75}
+--- !u!82 &8207632
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9593988
 Animator:
   serializedVersion: 3
@@ -76,6 +137,44 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11414902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ecf317c30d1418db679269fac9f846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxAttack1: {fileID: 8300000, guid: 9cd8b50fd169940e0b35b15ac09ae18e, type: 3}
+  sfxAttack2: {fileID: 8300000, guid: b542d8c52df194104afbefc9d3a64c16, type: 3}
+  sfxAttack3: {fileID: 8300000, guid: 70f38f2174da3489fae328cb10238664, type: 3}
+  sfxHit1: {fileID: 8300000, guid: 99441f720a2e64f6b835f4687e9e59fa, type: 3}
+  sfxHit2: {fileID: 8300000, guid: aabb352826df842ffba667ad194e1d07, type: 3}
+  sfxHit3: {fileID: 8300000, guid: 909d1c2dd5a8d48d9a8875b01c659079, type: 3}
+  sfxJump1: {fileID: 8300000, guid: 89016ab985c57471b9d2c1e56ff38371, type: 3}
+  sfxJump2: {fileID: 8300000, guid: c145ff3f42a9e49f2aecabb291c7ba60, type: 3}
+  sfxJump3: {fileID: 8300000, guid: 403de9c68b7ae49ee8b2547a47393b44, type: 3}
+  sfxLand1: {fileID: 8300000, guid: 8a57bed41f6b3490189d4dcf533ceabe, type: 3}
+  sfxLand2: {fileID: 8300000, guid: 14d202249a0914264a3eb20cfd8aa123, type: 3}
+  sfxLand3: {fileID: 8300000, guid: d3a922f698f5d4d6ebb61a7be58e6f53, type: 3}
+  sfxWalk1: {fileID: 8300000, guid: a8bfb6b12ff4246ab806b5992be9eeb1, type: 3}
+  sfxWalk2: {fileID: 8300000, guid: da23490f51939493aa72a5a2dcb2a7f2, type: 3}
+  sfxWalk3: {fileID: 8300000, guid: bdce30c2e8314406f90ff4252cecc250, type: 3}
+  sfxWalk4: {fileID: 8300000, guid: 3fe5da7ef5e3e4e45a19530916a1d5ca, type: 3}
+  sfxWalk5: {fileID: 8300000, guid: 4762182a70e764169affc958e2e62ae9, type: 3}
+  sfxGrunt1: {fileID: 8300000, guid: 289527cca2561474790f083d83a6f691, type: 3}
+  sfxGrunt2: {fileID: 8300000, guid: e69953c1cc31d40f18f0e69e6f18b8de, type: 3}
+  sfxGrunt3: {fileID: 8300000, guid: 20efc9ebd54bf47a6ac3ffe07f0bd6a7, type: 3}
+  sfxGrunt4: {fileID: 8300000, guid: f70c22277472d4d42b76ccd44407d11d, type: 3}
+  sfxGrunt5: {fileID: 8300000, guid: a0994dc54f2ed49908531978423d2d11, type: 3}
+  sfxIdle1: {fileID: 8300000, guid: 59004c0fab9b544c58008a6d7b23e0b3, type: 3}
+  sfxIdle2: {fileID: 8300000, guid: 6180a694cc4204865a57e7639c0fac0a, type: 3}
+  sfxIdle3: {fileID: 8300000, guid: b125511ffe8a2420abd7d5a167eeb69d, type: 3}
+  sfxIdle4: {fileID: 8300000, guid: 5e4acac48e92e481c81daac75d5528dd, type: 3}
+  sfxIdle5: {fileID: 8300000, guid: 9bc44b8f8cb9d4727bf76f30cd18f8ec, type: 3}
 --- !u!114 &11428762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +211,20 @@ MonoBehaviour:
   _rigidBody: {fileID: 5028762}
   _boxCollider: {fileID: 0}
   isGrounded: 0
+--- !u!114 &11439474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4147a8f5b866401b89494d589545996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 21293988}
+  alphaDecay: .00999999978
+  gameListener: {fileID: 0}
 --- !u!114 &11457130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,8 +238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputAxis: Fire1
   _animator: {fileID: 9593988}
-  _animationTrigger: 
-  _attackSpeed: 100
   _rigidBody: {fileID: 5028762}
   damage: -10
 --- !u!114 &11477514

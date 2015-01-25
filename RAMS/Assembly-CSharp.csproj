@@ -47,10 +47,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AttackComponent.cs" />
+     <Compile Include="Assets\Scripts\ButtonSounds.cs" />
+     <Compile Include="Assets\Scripts\EndGame.cs" />
+     <Compile Include="Assets\Scripts\FadeOut.cs" />
+     <Compile Include="Assets\Scripts\FlipClouds.cs" />
+     <Compile Include="Assets\Scripts\GameSoundManager.cs" />
      <Compile Include="Assets\Scripts\HealthBarScript.cs" />
      <Compile Include="Assets\Scripts\JumpComponent.cs" />
+     <Compile Include="Assets\Scripts\NoMouse.cs" />
      <Compile Include="Assets\Scripts\PlatformMoveScript.cs" />
+     <Compile Include="Assets\Scripts\SubmitLoop.cs" />
      <Compile Include="Assets\Scripts\WalkComponent.cs" />
+     <Compile Include="Assets\Scripts\changeScene.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/dev/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -32,7 +32,7 @@ public class JumpComponent : MonoBehaviour
 
 
 
-		if ( Time.time < _ignoreJumpUntil || !isGrounded )
+		if ( Time.time < _ignoreJumpUntil || !isGrounded  )
             return;
 
 
@@ -42,7 +42,6 @@ public class JumpComponent : MonoBehaviour
         {
 
 			float direction = Mathf.Ceil(axis);
-			Debug.Log (direction);
 
 			float yMovement = direction * _force;
             Vector2 moveVector = new Vector2( 0.0f, yMovement );
@@ -50,6 +49,7 @@ public class JumpComponent : MonoBehaviour
             _rigidBody.AddForce( moveVector, ForceMode2D.Impulse );
 
 			isGrounded = false;
+			BroadcastMessage("PlayJumpSound");
             _ignoreJumpUntil = Time.time + 0.25f;
 
 			_animator.SetBool("isGrounded", isGrounded);
@@ -65,7 +65,9 @@ public class JumpComponent : MonoBehaviour
 	}
 
 	void OnCollisionEnter2D (Collision2D hit) {
-		Debug.Log("at collision");
+		if (isGrounded) {
+			return;
+		}
 		var hitLayer = hit.gameObject.layer;
 		// 8 terrain, 9 goat, 10 goatpassableterrain layer
 		if (hitLayer ==8 || hitLayer ==9 || hitLayer ==10  ){
@@ -77,6 +79,7 @@ public class JumpComponent : MonoBehaviour
 			{
 				if (contact.normal.y >= 1) {
 					isGrounded = true;
+					BroadcastMessage("PlayLandSound");
 					_animator.SetBool("isGrounded", isGrounded);
 					break;
 				}
