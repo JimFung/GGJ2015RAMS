@@ -258,7 +258,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -741,7 +741,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -961,7 +961,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1619,6 +1619,10 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: 98d707d1282671241a0e60f7abb4e856,
         type: 3}
+    - target: {fileID: 11416894, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
   m_RootGameObject: {fileID: 491440795}
@@ -1892,6 +1896,14 @@ Prefab:
     - target: {fileID: 11416894, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
       propertyPath: m_FontData.m_FontStyle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416894, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416894, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
@@ -2455,6 +2467,10 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: 98d707d1282671241a0e60f7abb4e856,
         type: 3}
+    - target: {fileID: 11416894, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e159a5aad96fe4ae28005c8ed37a43c1, type: 2}
   m_RootGameObject: {fileID: 2032161491}
