@@ -1,14 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="FlowerPowerup.cs" selected="True" />
-            </Node>
+            <Node name="Scripts" expanded="True" />
           </Node>
+          <Node name="Assembly-UnityScript" expanded="True" />
         </State>
       </Pad>
     </Pads>

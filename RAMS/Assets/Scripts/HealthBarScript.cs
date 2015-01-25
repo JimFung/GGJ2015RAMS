@@ -19,7 +19,6 @@ public class HealthBarScript : MonoBehaviour {
 	
 	void OnGUI() {
 
-		Debug.Log (currHealth + " " + healthBarLength + " " + minHealthBarLength);
 		GUI.backgroundColor = Color.green;
 		if (currHealth != 0 ) {
 			GUI.Button (new Rect (x, y, healthBarLength, barHeight), "");

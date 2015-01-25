@@ -210,6 +210,38 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: 98d707d1282671241a0e60f7abb4e856,
         type: 3}
+    - target: {fileID: 11420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 22420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 22420644, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86c749143edaa47b1a8b23a855772127, type: 2}
   m_RootGameObject: {fileID: 935418728}
@@ -1839,10 +1871,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2051961148}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2086505032
 MonoBehaviour:
@@ -1865,7 +1897,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
