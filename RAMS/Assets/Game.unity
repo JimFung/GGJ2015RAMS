@@ -1612,7 +1612,7 @@ MonoBehaviour:
   _inputAxis: RamAttack1
   _animator: {fileID: 1107960392}
   _rigidBody: {fileID: 1107960391}
-  damage: -10
+  damage: -20
 --- !u!114 &1107960388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,10 +1859,10 @@ MonoBehaviour:
   sfxIdle3: {fileID: 8300000, guid: b125511ffe8a2420abd7d5a167eeb69d, type: 3}
   sfxIdle4: {fileID: 8300000, guid: 5e4acac48e92e481c81daac75d5528dd, type: 3}
   sfxIdle5: {fileID: 8300000, guid: 9bc44b8f8cb9d4727bf76f30cd18f8ec, type: 3}
-  sfxDead1: {fileID: 0}
-  sfxDead2: {fileID: 0}
-  sfxDead3: {fileID: 0}
-  sfxDead4: {fileID: 0}
+  sfxDead1: {fileID: 8300000, guid: 0501648cd628449a9866244972dbefd5, type: 3}
+  sfxDead2: {fileID: 8300000, guid: aeffdd52135e349c5818ca6f8a069f2b, type: 3}
+  sfxDead3: {fileID: 8300000, guid: 33babd1c8300d4c61b1438014d990724, type: 3}
+  sfxDead4: {fileID: 8300000, guid: 444adce5d391c476eacf849db480ab33, type: 3}
   powersfx: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
 --- !u!1 &1259834123
 GameObject:
@@ -2169,8 +2169,24 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
     - target: {fileID: 11457130, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
       propertyPath: damage
-      value: -10
+      value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead1
+      value: 
+      objectReference: {fileID: 8300000, guid: 0501648cd628449a9866244972dbefd5, type: 3}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead2
+      value: 
+      objectReference: {fileID: 8300000, guid: aeffdd52135e349c5818ca6f8a069f2b, type: 3}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead3
+      value: 
+      objectReference: {fileID: 8300000, guid: 33babd1c8300d4c61b1438014d990724, type: 3}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead4
+      value: 
+      objectReference: {fileID: 8300000, guid: 444adce5d391c476eacf849db480ab33, type: 3}
     m_RemovedComponents:
     - {fileID: 11477514, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
@@ -2356,6 +2372,22 @@ Prefab:
       propertyPath: damage
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead1
+      value: 
+      objectReference: {fileID: 8300000, guid: 0501648cd628449a9866244972dbefd5, type: 3}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead2
+      value: 
+      objectReference: {fileID: 8300000, guid: aeffdd52135e349c5818ca6f8a069f2b, type: 3}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead3
+      value: 
+      objectReference: {fileID: 8300000, guid: 33babd1c8300d4c61b1438014d990724, type: 3}
+    - target: {fileID: 11414902, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
+      propertyPath: sfxDead4
+      value: 
+      objectReference: {fileID: 8300000, guid: 444adce5d391c476eacf849db480ab33, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ebbf70e30cc34362a9bcb94f3ce4a7c, type: 2}
   m_RootGameObject: {fileID: 1563720330}
@@ -2650,10 +2682,10 @@ MonoBehaviour:
   sfxIdle3: {fileID: 8300000, guid: b125511ffe8a2420abd7d5a167eeb69d, type: 3}
   sfxIdle4: {fileID: 8300000, guid: 5e4acac48e92e481c81daac75d5528dd, type: 3}
   sfxIdle5: {fileID: 8300000, guid: 9bc44b8f8cb9d4727bf76f30cd18f8ec, type: 3}
-  sfxDead1: {fileID: 0}
-  sfxDead2: {fileID: 0}
-  sfxDead3: {fileID: 0}
-  sfxDead4: {fileID: 0}
+  sfxDead1: {fileID: 8300000, guid: 0501648cd628449a9866244972dbefd5, type: 3}
+  sfxDead2: {fileID: 8300000, guid: aeffdd52135e349c5818ca6f8a069f2b, type: 3}
+  sfxDead3: {fileID: 8300000, guid: 33babd1c8300d4c61b1438014d990724, type: 3}
+  sfxDead4: {fileID: 8300000, guid: 444adce5d391c476eacf849db480ab33, type: 3}
   powersfx: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
 --- !u!1 &1564182409
 GameObject:

@@ -34,6 +34,7 @@ MonoImporter:
   - sfxDead2: {fileID: 8300000, guid: aeffdd52135e349c5818ca6f8a069f2b, type: 3}
   - sfxDead3: {fileID: 8300000, guid: 33babd1c8300d4c61b1438014d990724, type: 3}
   - sfxDead4: {fileID: 8300000, guid: 444adce5d391c476eacf849db480ab33, type: 3}
+  - powersfx: {fileID: 8300000, guid: 4c0022b92560e40a5888446998cf463f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
